@@ -15,7 +15,9 @@
   "dependencies": {
     "angular": "^1.5.8",
     "angular-ui-router": "^0.3.2",
+    "bootstrap": "^3.3.7",
     "hapi": "~7.5.0",
+    "jquery": "^3.1.1",
     "path": "^0.4.9"
   },
   "devDependencies": {
