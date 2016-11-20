@@ -1,0 +1,72 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* Navbar */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.navbar.topFixedNav {
+  min-height: 80px;
+  border: none;
+  background-color: rgba(32,32,32,1);
+}
+
+div#bs-example-navbar-collapse-1.navLinks {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0%, -50%);
+}
+
+.navbar-header.navHead {
+  position: absolute;
+  top: 50%;
+  left: 14%;
+  transform: translate(0%, -50%);
+  border: 2px solid #fff;
+  padding-left: 11px;
+}
+
+.navbar-default .navbar-brand.logo,
+.navbar-default .navbar-nav.navbarLinks>li>a {
+  color: #fff;
+}
+
+.navbar-default .navbar-brand.logo .titleBig {
+  text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav.navbarLinks>li>a {
+  font-size: 20px;
+  text-transform: uppercase;
+  height: 80px;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+.navbar-default .navbar-nav.navbarLinks>li>a:hover {
+  background-color: rgba(64,231,184,1);
+}
+
+span.titleSmall {
+  font-size: 10px;
+  font-weight: 100;
+  position: relative;
+  bottom: 2px;
+}
+
+.titleImageWrapper {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+  top: 15px;
+  left: 9%;
+}
+
+img.img-responsive.titleImage {
+  position: absolute;
+  filter: grayscale(100%);
+}
