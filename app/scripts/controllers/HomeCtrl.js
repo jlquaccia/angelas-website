@@ -1,5 +1,5 @@
 (function() {
-  function HomeCtrl($scope, GalleryImages) {
+  function HomeCtrl($scope, GalleryImages, ScrollEffects) {
     $scope.images = GalleryImages.getImages();
     $scope.imageOverlayStatus = 'closed';
     $scope.currentEnlargedImage = '';
@@ -53,10 +53,12 @@
       }
     };
 
-    console.log($scope.images.length);
+    (function() {
+      ScrollEffects.navShowHideScrollEffect();
+    })();
   }
 
   angular
     .module('angelasWebsite')
-    .controller('HomeCtrl', ['$scope', 'GalleryImages', HomeCtrl]);
+    .controller('HomeCtrl', ['$scope', 'GalleryImages', 'ScrollEffects', HomeCtrl]);
 })();
