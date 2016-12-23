@@ -1,8 +1,17 @@
+<!-- header -->
+<header class="homeHeader">
+  <div class="headerBox">
+    <h1><div class="animated fadeInUpBig delayOne">Angela Sha</div></h1>
+    <h2><div class="animated fadeInUpBig delayTwo">Pole Dance Performer and Instructor</div></h2>
+  </div>
+</header>
+<!-- end header -->
+
+<!-- image gallery -->
 <div class="galleryWrapper">
   <section class="products gallery">
     <figure ng-repeat="image in images">
       <img class="trigger-overlay" src="{{image.src}}" alt="Angela Sha" ng-click="openImageOverlay($index);">
-      <!-- <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus omnis facere earum eveniet dolore numquam velit ipsum repellat! Accusamus doloribus quidem quisquam, laboriosam ea porro earum dolor, illum? Quas, voluptatibus.</figcaption> -->
     </figure>
   </section>
 
@@ -14,3 +23,4 @@
     <i ng-class="rightArrow" class="ion-ios-arrow-thin-right" ng-click="nextImage();"></i>
   </div>
 </div>
+<!-- end image gallery -->
