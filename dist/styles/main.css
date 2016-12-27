@@ -194,6 +194,7 @@ img.trigger-overlay:hover {
   visibility: visible;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
+  z-index: 9999;
 }
 
 .overlay-hugeinc nav {
@@ -223,84 +224,84 @@ img.trigger-overlay:hover {
 .currentEnlargedImage {
   width: 30%;
   position: relative;
-  top: 12%;
+  top: 6.5%;
   border: 20px solid #fff;
 }
 
 .img0, .img3, .img9, .img11, .img13 {
   width: 30%;
   position: relative;
-  top: 12%;
+  top: 6.5%;
   border: 20px solid #fff;
 }
 
 .img1 {
   width: 31.2%;
   position: relative;
-  top: 12%;
+  top: 6.5%;
   border: 20px solid #fff;
 }
 
 .img2 {
   width: 43.5%;
   position: relative;
-  top: 12%;
+  top: 6.5%;
   border: 20px solid #fff;
 }
 
 .img4 {
   width: 43.5%;
   position: relative;
-  top: 12%;
+  top: 6.5%;
   border: 20px solid #fff;
 }
 
 .img5 {
   width: 43.5%;
   position: relative;
-  top: 12%;
+  top: 6.5%;
   border: 20px solid #fff;
 }
 
 .img6 {
   width: 64%;
   position: relative;
-  top: 12%;
+  top: 6.5%;
   border: 20px solid #fff;
 }
 
 .img7 {
   width: 35.5%;
   position: relative;
-  top: 12%;
+  top: 6.5%;
   border: 20px solid #fff;
 }
 
 .img8 {
   width: 43.5%;
   position: relative;
-  top: 12%;
+  top: 6.5%;
   border: 20px solid #fff;
 }
 
 .img10 {
   width: 29%;
   position: relative;
-  top: 12%;
+  top: 6.5%;
   border: 20px solid #fff;
 }
 
 .img12 {
   width: 35.5%;
   position: relative;
-  top: 12%;
+  top: 6.5%;
   border: 20px solid #fff;
 }
 
 .img14 {
   width: 43.5%;
   position: relative;
-  top: 12%;
+  top: 6.5%;
   border: 20px solid #fff;
 }
 
