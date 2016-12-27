@@ -1,43 +1,63 @@
 <!-- header -->
-<header class="skw-pages">
-  <div class="skw-page skw-page-1 active">
-    <div class="skw-page__half skw-page__half--left">
-      <div class="skw-page__skewed">
-        <div class="skw-page__content"></div>
+  <header class="skw-pages">
+    <div class="skw-page skw-page-1 active">
+      <div class="skw-page__half skw-page__half--left">
+        <div class="skw-page__skewed">
+          <div class="skw-page__content"></div>
+        </div>
       </div>
-    </div>
 
-    <div class="skw-page__half skw-page__half--right">
-      <div class="skw-page__skewed">
-        <div class="skw-page__content">
-          <!-- <h2 class="skw-page__heading">Skewed One Page Scroll</h2>
-          <p class="skw-page__description">Just scroll down</p> -->
+      <div class="skw-page__half skw-page__half--right">
+        <div class="skw-page__skewed">
+          <div class="skw-page__content">
+            <!-- <h2 class="skw-page__heading">Skewed One Page Scroll</h2>
+            <p class="skw-page__description">Just scroll down</p> -->
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="headerBox">
-    <h1><div class="animated fadeInUpBig delayOne">Angela Sha</div></h1>
-    <h2><div class="animated fadeInUpBig delayTwo">Pole Dance Performer and Instructor</div></h2>
-  </div>
-</header>
+    <div class="headerBox">
+      <h1><div class="animated fadeInUpBig delayOne">Angela Sha</div></h1>
+      <h2><div class="animated fadeInUpBig delayTwo">Pole Dance Performer and Instructor</div></h2>
+    </div>
+  </header>
 <!-- end header -->
 
 <!-- image gallery -->
-<div class="galleryWrapper">
-  <section class="products gallery">
-    <figure ng-repeat="image in images">
-      <img class="trigger-overlay" src="{{image.src}}" alt="Angela Sha" ng-click="openImageOverlay($index);">
-    </figure>
-  </section>
-
-  <!-- gallery image overlay -->
-  <div class="overlay overlay-hugeinc" ng-class="imageOverlayStatus">
-    <i class="overlay-close ion-ios-close-empty" ng-click="closeImageOverlay();"></i>
-    <img class="{{currentEnlargedImage.class}}" src="{{currentEnlargedImage.src}}" alt="Angela Sha">
-    <i ng-class="leftArrow" class="ion-ios-arrow-thin-left" ng-click="prevImage();"></i>
-    <i ng-class="rightArrow" class="ion-ios-arrow-thin-right" ng-click="nextImage();"></i>
+  <div class="cl-effect-6">
+    <div class="a" href="#">Gallery</div>
   </div>
+
+  <div class="galleryWrapper">
+    <section class="products gallery">
+      <figure ng-repeat="image in images">
+        <img class="trigger-overlay" src="{{image.src}}" alt="Angela Sha" ng-click="openImageOverlay($index);">
+      </figure>
+    </section>
+
+    <!-- gallery image overlay -->
+    <div class="overlay overlay-hugeinc" ng-class="imageOverlayStatus">
+      <i class="overlay-close ion-ios-close-empty" ng-click="closeImageOverlay();"></i>
+      <img class="{{currentEnlargedImage.class}}" src="{{currentEnlargedImage.src}}" alt="Angela Sha">
+      <i ng-class="leftArrow" class="ion-ios-arrow-thin-left" ng-click="prevImage();"></i>
+      <i ng-class="rightArrow" class="ion-ios-arrow-thin-right" ng-click="nextImage();"></i>
+    </div>
+  </div>
+<!-- end image gallery -->
+
+<div class="cl-effect-6">
+  <div class="b about" href="#">About</div>
 </div>
-<!-- end image gallery
+
+<div class="cl-effect-6">
+  <div class="a" href="#">Video</div>
+</div>
+
+<div class="cl-effect-6">
+  <div class="b blog" href="#">Blog</div>
+</div>
+
+<div class="cl-effect-6">
+  <div class="a" href="#">Contact</div>
+</div>
