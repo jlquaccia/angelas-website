@@ -624,19 +624,6 @@ header.homeHeader.ng-scope {
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* header cinema effect */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
-/*html, body {
-  height: 100%;
-  margin: 0;
-  overflow: hidden;
-}*/
-
-/*.background {
-  width: 100%;
-  height: 100%;
-  background-image: url("https://s3-us-west-1.amazonaws.com/angelas-website/FullSizeRender.png");
-  background-size: cover;
-}*/
-
 .outer-scratch,
 .inner-scratch {
   height: inherit;
@@ -675,50 +662,6 @@ header.homeHeader.ng-scope {
   -webkit-animation: grain 0.5s steps(1) infinite;
   animation: grain 0.5s steps(1) infinite;
 }
-
-/*  Basic Title  */
-/*h1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  font-size: 3em;
-  text-align: center;
-  color: #fff;
-  -webkit-animation: 3s fade;
-  animation: 3s fade;
-}
-
-h1 span {
-  display: inline-block;
-  position: relative;
-  padding: .5em 1em;
-}
-
-h1 span:before {
-  display: block;
-  content: '';
-  width: 110%;
-  margin-left: -5%;
-  margin-bottom: 5%;
-  border-top: 1px solid #fff;
-  -webkit-animation: 2.5s draw;
-  animation: 2.5s draw;
-}
-
-h1 span:after {
-  display: block;
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  border-bottom: 1px solid #fff;
-  -webkit-animation: 2.5s draw-bottom;
-  animation: 2.5s draw-bottom;
-}*/
 
 /* Film Animations */
 @keyframes grain {
@@ -860,33 +803,57 @@ h1 span:after {
   }
 }
 
-/* Simple Title Animation */
-@keyframes draw {
-  0% {
-    width: 0%;
-  }
-  
-  100% {
-    width: 110%;
-  }
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* about */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+section#about {
+  height: 100vh;
+  background-color: rgba(32,32,32,1);
+  color: #fff;
+  position: relative;
 }
 
-@keyframes draw-bottom {
-  0% {
-    width: 0%;
-  }
-  
-  100% {
-    width: 100%;
-  }
+section#about .cl-effect-6 {
+  background-color: #fff;
 }
 
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  
-  100% {
-    opacity: 1;
-  }
+section#about .cl-effect-6 div {
+  color: rgba(32,32,32,1);
+}
+
+section#about .cl-effect-6 .b::before,
+section#about .cl-effect-6 .b.about::after {
+  background: rgba(32,32,32,1);
+}
+
+.aboutTextWrapper.text-left {
+  width: 90%;
+  margin: 56px;
+  padding: 0 50px;
+}
+
+.aboutTextWrapper h1 {
+  display: inline-block;
+  letter-spacing: -3px;
+  text-transform: lowercase;
+  font-weight: 900;
+  font-size: 6.5em;
+}
+
+.aboutTextWrapper p {
+  text-transform: none;
+  width: 90%;
+  margin: 20px 0;
+  font-size: 2em;
+}
+
+.aboutBorder {
+  position: absolute;
+  width: 90%;
+  height: 70%;
+  border: 5px solid #fff;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 150px;
 }
