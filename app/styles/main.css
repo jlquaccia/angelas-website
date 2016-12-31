@@ -12,6 +12,11 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+html {
+  height: 100%;
+  background-color: #202020;
+}
+
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* image gallery */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -541,8 +546,18 @@ header.homeHeader.ng-scope {
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* section titles */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
-.cl-effect-6 {
+/*.cl-effect-6 {
   text-align: center;
+}*/
+
+.galleryTitle,
+.aboutTitle {
+  text-align: right;
+}
+
+.videoTitle,
+.contactTitle {
+  text-align: left;
 }
 
 .cl-effect-6 div {
@@ -550,7 +565,7 @@ header.homeHeader.ng-scope {
   display: inline-block;
   margin: 15px 25px;
   outline: none;
-  color: #000;
+  /*color: #000;*/
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -559,257 +574,13 @@ header.homeHeader.ng-scope {
   padding: 10px 20px;
 }
 
-.cl-effect-6 .a::before {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #000;
-  content: '';
-  -webkit-transition: top 0.3s;
-  -moz-transition: top 0.3s;
-  transition: top 0.3s;
-  top: 100%;
-  opacity: 1;
-}
-
-.cl-effect-6 .a::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 2px;
-  background: #000;
-  content: '';
-  -webkit-transition: height 0.3s;
-  -moz-transition: height 0.3s;
-  transition: height 0.3s;
-  height: 100%;
-}
-
-.cl-effect-6 .b::before {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #000;
-  content: '';
-  -webkit-transition: top 0.3s;
-  -moz-transition: top 0.3s;
-  transition: top 0.3s;
-  top: 100%;
-  opacity: 1;
-}
-
-.cl-effect-6 .b::after {
-  position: absolute;
-  top: 0;
-  left: 98%;
-  width: 2px;
-  background: #000;
-  content: '';
-  -webkit-transition: height 0.3s;
-  -moz-transition: height 0.3s;
-  transition: height 0.3s;
-  height: 100%;
-}
-
-.cl-effect-6 .b.about::after {
-  left: 98.3%;
-}
-
-.cl-effect-6 .b.blog::after {
-  left: 99%;
-}
-
-/*-----------------------------------------------------------------------------------------------------------------------------------*/
-/* header cinema effect */
-/*-----------------------------------------------------------------------------------------------------------------------------------*/
-.outer-scratch,
-.inner-scratch {
-  height: inherit;
-}
-
-.outer-scratch:after,
-.inner-scratch:after {
-  content: '';
-  width: 120%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding-left: 100px;
-  opacity: .08;
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/662025/scratch.png') repeat center center;
-  -webkit-animation: scratch 0.45s steps(1) infinite;
-  animation: scratch 0.45s steps(1) infinite;
-}
-
-.inner-scratch:after {
-  left: 30%;
-  -webkit-animation: inner-scratch 2s infinite;
-  animation: inner-scratch 2s infinite;
-}
-
-.grain:after {
-  content: '';
-  width: 110%;
-  height: 110%;
-  position: absolute;
-  top: -5%;
-  left: -5%;
-  opacity: .11;
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/662025/grain.jpg') repeat center center;
-  -webkit-animation: grain 0.5s steps(1) infinite;
-  animation: grain 0.5s steps(1) infinite;
-}
-
-/* Film Animations */
-@keyframes grain {
-  0%,
-  100% {
-    transform: translate(0, 0, 0);
-  }
-  
-  10% {
-    transform: translate(-1%, -1%);
-  }
-  
-  20% {
-    transform: translate(1%, 1%);
-  }
-  
-  30% {
-    transform: translate(-2%, -2%);
-  }
-  
-  40% {
-    transform: translate(3%, 3%);
-  }
-  
-  50% {
-    transform: translate(-3%, -3%);
-  }
-  
-  60% {
-    transform: translate(4%, 4%);
-  }
-  
-  70% {
-    transform: translate(-4%, -4%);
-  }
-  
-  80% {
-    transform: translate(2%, 2%);
-  }
-  
-  90% {
-    transform: translate(-3%, -3%);
-  }
-}
-
-@keyframes scratch {
-  0%,
-  100% {
-    transform: translateX(0);
-    opacity: 0.075;
-  }
-  
-  10% {
-    transform: translateX(-1%);
-  }
-  
-  20% {
-    transform: translateX(1%);
-  }
-  
-  30% {
-    transform: translateX(-2%);
-    opacity: 0.09;
-  }
-  
-  40% {
-    transform: translateX(3%);
-  }
-  
-  50% {
-    transform : translateX(-3%);
-    opacity: 0.05;
-  }
-  
-  60% {
-    transform: translateX(8%);
-  }
-  
-  70% {
-    transform: translateX(-3%);
-  }
-  
-  80% {
-    transform: translateX(10%);
-    opacity: 0.02;
-  }
-  
-  90% {
-    transform: translateX(-2%);
-  }
-}
-
-@keyframes inner-scratch {
-  0% {
-    transform: translateX(0);
-    opacity: 0.08;
-  }
-  
-  10% {
-    transform: translateX(-1%);
-  }
-  
-  20% {
-    transform: translateX(1%);
-  }
-  
-  30% {
-    transform: translateX(-2%);
-  }
-  
-  40% {
-    transform: translateX(3%);
-  }
-  
-  50% {
-    transform: translateX(-3%);
-    opacity: 0.06;
-  }
-  
-  60% {
-    transform: translateX(8%);
-  }
-  
-  70% {
-    transform: translateX(-3%);
-  }
-  
-  80% {
-    transform: translateX(10%);
-    opacity: 0.03;
-  }
-  
-  90% {
-    transform: translateX(20%);
-  }
-  
-  100% {
-    transform: translateX(30%);
-  }
-}
-
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* about */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 section#about {
   height: 100vh;
-  background-color: rgba(32,32,32,1);
-  color: #fff;
+  background-color: #fff;
+  color: rgba(32,32,32,1);
   position: relative;
 }
 
@@ -851,7 +622,7 @@ section#about .cl-effect-6 .b.about::after {
   position: absolute;
   width: 90%;
   height: 70%;
-  border: 5px solid #fff;
+  border: 5px solid #202020;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -863,7 +634,7 @@ section#about .cl-effect-6 .b.about::after {
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 .videoWrapper {
   position: relative;
-  padding-bottom: 56.25%;  /* 16:9 */
+  padding-bottom: 53%;  /* 16:9 */
   padding-top: 25px;
   height: 0;
 }
@@ -874,4 +645,100 @@ section#about .cl-effect-6 .b.about::after {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.p0 {
+  padding: 0;
+}
+
+.videoBlurb {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.videoDescription {
+  display: inline;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.col-md-4.p0.text-center.videoDescriptionWrapper {
+  height: 534px;
+  padding-left: 20px;
+  background-color: #4D4946;
+}
+
+section#video {
+  /*padding: 0 20px 25px;*/
+  background-color: #202020;
+  color: #fff;
+  margin-top: 25px;
+}
+
+.videoTitle {
+  margin-top: 0;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* contact */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+section#contact {
+  position: relative;
+  /*padding: 0 20px;*/
+  background-color: #202020;
+  color: #fff;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+/* hide google logo, trademark and tos */
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+  display:none;
+}
+.gmnoprint div {
+  background:none !important;
+}
+
+.mapWrapper {
+  height: 565px;
+}
+
+.col-md-6.p0.text-center.videoDescriptionWrapper {
+  height: 565px;
+  padding: 0 20px;
+  background-color: #4D4946;
+}
+
+ul.contactList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.contactList li {
+  display: inline-block;
+}
+
+ul.contactList li a {
+  color: #fff;
+}
+
+h1.contactCta {
+  font-weight: 200;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* footer */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+footer {
+  width: 100%;
 }

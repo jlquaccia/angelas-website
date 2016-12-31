@@ -1,5 +1,5 @@
 (function() {
-  function HomeCtrl($scope, GalleryImages, ScrollEffects) {
+  function HomeCtrl($scope, GalleryImages, ScrollEffects, GoogleMaps) {
     $scope.images = GalleryImages.getImages();
     $scope.imageOverlayStatus = 'closed';
     $scope.currentEnlargedImage = '';
@@ -53,12 +53,14 @@
       }
     };
 
+    // invoke right away
     (function() {
       ScrollEffects.navShowHideScrollEffect();
+      GoogleMaps.initMap();
     })();
   }
 
   angular
     .module('angelasWebsite')
-    .controller('HomeCtrl', ['$scope', 'GalleryImages', 'ScrollEffects', HomeCtrl]);
+    .controller('HomeCtrl', ['$scope', 'GalleryImages', 'ScrollEffects', 'GoogleMaps', HomeCtrl]);
 })();

@@ -1,28 +1,22 @@
 header -->
   <header class="skw-pages">
-    <div class="outer-scratch"><!-- cinema effect -->
-      <div class="inner-scratch"><!-- cinema effect -->
-        <div class="background grain"><!-- cinema effect -->
-          <div class="skw-page skw-page-1 active">
-            <div class="skw-page__half skw-page__half--left">
-              <div class="skw-page__skewed">
-                <div class="skw-page__content"></div>
-              </div>
-            </div>
+    <div class="skw-page skw-page-1 active">
+      <div class="skw-page__half skw-page__half--left">
+        <div class="skw-page__skewed">
+          <div class="skw-page__content"></div>
+        </div>
+      </div>
 
-            <div class="skw-page__half skw-page__half--right">
-              <div class="skw-page__skewed">
-                <div class="skw-page__content">
-                  <!-- <h2 class="skw-page__heading">Skewed One Page Scroll</h2>
-                  <p class="skw-page__description">Just scroll down</p> -->
-                </div>
-              </div>
-            </div>
+      <div class="skw-page__half skw-page__half--right">
+        <div class="skw-page__skewed">
+          <div class="skw-page__content">
+            <!-- <h2 class="skw-page__heading">Skewed One Page Scroll</h2>
+            <p class="skw-page__description">Just scroll down</p> -->
           </div>
         </div>
       </div>
     </div>
-
+        
     <div class="headerBorder"></div>
 
     <div class="headerBox">
@@ -33,7 +27,7 @@ header -->
 <!-- end header -->
 
 <!-- image gallery -->
-  <div class="cl-effect-6">
+  <div class="cl-effect-6 galleryTitle">
     <div class="a" href="#">Gallery</div>
   </div>
 
@@ -54,9 +48,39 @@ header -->
   </div>
 <!-- end image gallery -->
 
+<!-- video -->
+<section id="video">
+  <div class="cl-effect-6 videoTitle">
+    <div class="a" href="#">Video</div>
+  </div>
+  
+  <div class="container-fluid p0">
+    <div class="row m0">
+      <div class="col-md-8 p0">
+        <!-- vimeo -->
+        <div class="videoWrapper">
+          <iframe src="//player.vimeo.com/video/6596738?byline=0&portrait=0&title=0" width="560" height="349" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-md-4 p0 text-center videoDescriptionWrapper">
+        <div class="videoBlurb">
+          <h1 class="videoTitle">"Ready, Able" - Grizzly Bear</h1>
+          <div class="videoDescription">Vinyl microdosing subway tile migas. Mixtape normcore church-key af aesthetic. Actually squid 3 wolf moon, schlitz banjo man bun freegan yuccie franzen gluten-free umami occupy aesthetic. Vape whatever gastropub, hammock hell of polaroid lyft cray. YOLO fixie you probably haven't heard of them pinterest, poutine raw denim small batch poke salvia portland PBR&B pug trust fund la croix. Iceland air plant artisan, you probably haven't heard of them before they sold out umami green juice single-origin coffee farm-to-table migas cray pabst glossier small batch. Health goth 3 wolf moon tousled stumptown deep v salvia, mustache craft beer ethical irony fixie art party sartorial bitters.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- youtube -->
+  <!-- <div class="videoWrapper">
+    <iframe id="player" type="text/html" width="640" height="390" src="http://www.youtube.com/embed/_hI0qMtdfng?enablejsapi=1&origin=http://example.com" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div> -->
+</section>
+<!-- end video -->
+
 <!-- about -->
 <section id="about">
-  <div class="cl-effect-6">
+  <div class="cl-effect-6 aboutTitle">
     <div class="b about" href="#">About</div>
   </div>
 
@@ -70,32 +94,42 @@ header -->
 </section>
 <!-- end about -->
 
-<!-- video -->
-<section id="video">
-  <div class="cl-effect-6">
-    <div class="a" href="#">Video</div>
-  </div>
-  
-  <!-- vimeo -->
-  <div class="videoWrapper">
-    <iframe src="//player.vimeo.com/video/6596738" width="560" height="349" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  </div>
-
-  <!-- youtube -->
-  <div class="videoWrapper">
-    <iframe id="player" type="text/html" width="640" height="390" src="http://www.youtube.com/embed/_hI0qMtdfng?enablejsapi=1&origin=http://example.com" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  </div>
-</section>
-<!-- end video -->
-
 <!-- blog -->
-<div class="cl-effect-6">
+<!-- <div class="cl-effect-6">
   <div class="b blog" href="#">Blog</div>
-</div>
+</div> -->
 <!-- end blog -->
 
 <!-- contact -->
-<div class="cl-effect-6">
-  <div class="a" href="#">Contact</div>
-</div>
-<!-- end contact
+<section id="contact">
+  <div class="cl-effect-6 contactTitle">
+    <div class="a" href="#">Contact</div>
+  </div>
+
+  <div class="containerfluid p0">
+    <div class="row m0">
+      <div class="col-md-6 p0 text-center videoDescriptionWrapper">
+        <div class="videoBlurb">
+          <h1 class="contactCta">Stay in touch</h1>
+          <ul class="contactList">
+            <li>
+              <a href="#">phone</a> |
+            </li>
+            <li>
+              <a href="#">email</a> |
+            </li>
+            <li>
+              <a href="#">instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 p0 mapWrapper">
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="contactBorder"></div> -->
+</section>
+<!-- end contact -->
