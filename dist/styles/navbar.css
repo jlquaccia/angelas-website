@@ -121,21 +121,20 @@ img.img-responsive.titleImage {
   filter: grayscale(100%);
 }
 
-/*.fixedAtTop {
-  -webkit-transform: translateY(-80px);
-  transform: translateY(-80px);
-}*/
-
-.topFixedNav .navbar-nav>li>a {
-  
-}
-
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* Nav Link Effect */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 .grid__item {
   z-index: 1;
   position: relative;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transform: translate3d(0, 0, 0);
 }
 
 @media screen and (max-width: 50em) {
@@ -154,106 +153,73 @@ img.img-responsive.titleImage {
   display: inline-block;
 }
 
-/* Surinami */
-.link--surinami {
-  /*font-family: 'Playfair Display', serif;*/
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: 9em;
-  color: #3A4945;
-  padding: 0 0 0.125em;
+.link--kumya {
+  font-size: 5em;
+  overflow: hidden;
+  padding: 10px 10px;
+  line-height: 1;
+  color: #292929;
 }
 
-.link--surinami::before,
-.link--surinami::after {
+.link--kumya:hover {
+  color: #292929;
+}
+
+.link--kumya::after {
   content: '';
-  width: 100%;
-  height: 1px;
-  z-index: -1;
-  background: #fff;
   position: absolute;
-  -webkit-transform: scale3d(0, 1, 1);
-  transform: scale3d(0, 1, 1);
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
+  height: 50%;
+  width: 100%;
+  top: 31%;
+  right: 0;
+  z-index: -1;
+  background: #ffffff;
+  -webkit-transform: translate3d(101%, 0, 0);
+  transform: translate3d(101%, 0, 0);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 }
 
-.show-color .link--surinami::before,
-.show-color .link--surinami::after {
-  content: '';
-  width: 100%;
-  height: 1px;
-  z-index: -1;
+.show-color .link--kumya::after {
   background: #292929;
-  position: absolute;
-  -webkit-transform: scale3d(0, 1, 1);
-  transform: scale3d(0, 1, 1);
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
 }
 
-.link--surinami::before {
-  right: 0;
-  top: 15px;
-  -webkit-transform-origin: 100% 50%;
-  transform-origin: 100% 50%;
-}
-
-.link--surinami::after {
-  left: 0;
-  bottom: 15px;
-  -webkit-transform-origin: 0 50%;
-  transform-origin: 0 50%;
-}
-
-.link--surinami:hover::before,
-.link--surinami:hover::after {
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
-}
-
-.link--surinami span {
-  position: relative;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
-}
-
-/*.link--surinami:hover span {
-  color: transparent;
-}*/
-
-.link--surinami span::before,
-.link--surinami span::after {
-  position: absolute;
-  /*color: #fff;*/
-  opacity: 0;
-  /*-webkit-transition: -webkit-transform 0.5s, opacity 1.5s;
-  transition: -webkit-transform 0.5s, opacity 1.5s;*/
-}
-
-.link--surinami span::before {
-  content: attr(data-letters-l);
-  left: 0;
-  -webkit-transform: translate3d(-5px, 0, 0);
-  transform: translate3d(-5px, 0, 0);
-}
-
-.link--surinami span::after {
-  content: attr(data-letters-r);
-  right: 0;
-  -webkit-transform: translate3d(5px, 0, 0);
-  transform: translate3d(5px, 0, 0);
-}
-
-/*.link--surinami:hover span::before,
-.link--surinami:hover span::after {
-  opacity: 1;
+.link--kumya:hover::after {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-}*/
+}
 
-@media screen and (max-width: 50em) {
-  .link--surinami {
+.link--kumya span {
+  display: block;
+  position: relative;
+}
+
+.link--kumya span::before {
+  content: attr(data-letters);
+  position: absolute;
+  color: #292929;
+  left: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0%;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.show-color .link--kumya span::before {
+  color: #ffffff;
+}
+
+.link--kumya:hover span::before {
+  width: 100%;
+}
+
+@media screen and (max-width: 42em) {
+  .link-kumya {
     font-size: 3em;
   }
 }
