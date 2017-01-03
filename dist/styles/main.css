@@ -759,7 +759,7 @@ h1.contactCta {
   text-decoration: none;
   padding: 0;
   color: #e7e6f1;
-  background: #907dda;
+  background: #737373;
   border: none;
   border-radius: 100%;
   -webkit-transform: translate(0, 80px);
@@ -784,6 +784,109 @@ h1.contactCta {
   -ms-transform: translate3d(0, 0, 0);
   transform: translate(0, 0);
   transform: translate3d(0, 0, 0);
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* scroll mouse */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+.block-main {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 25%;
+  top: 80%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+@-webkit-keyframes scrollDown {
+  0% {
+    top: 14px;
+    opacity: 0;
+  }
+  
+  15% {
+    top: 14px;
+    opacity: 1;
+  }
+  
+  30% {
+    top: 14px;
+    opacity: 1;
+  }
+  
+  45% {
+    top: 34px;
+    opacity: 1;
+  }
+  
+  100% {
+    top: 34px;
+    opacity: 0;
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    top: 14px;
+    opacity: 0;
+  }
+  
+  15% {
+    top: 14px;
+    opacity: 1;
+  }
+  
+  30% {
+    top: 14px;
+    opacity: 1;
+  }
+  
+  45% {
+    top: 34px;
+    opacity: 1;
+  }
+  
+  100% {
+    top: 34px;
+    opacity: 0;
+  }
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 25px;
+  display: inline-block;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.scroll-mouse {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 54px;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  border-radius: 20px;
+}
+
+.scroll-wheel {
+  position: absolute;
+  top: 14px;
+  left: 13px;
+  width: 4px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-animation: scrollDown 2.5s infinite;
+  animation: scrollDown 2.5s infinite;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/

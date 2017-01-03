@@ -131,7 +131,11 @@
       });
     })();
 
-
+    $scope.goToGallery = function() {
+      $('html, body').animate({
+        scrollTop: $('#gallery').offset().top
+      }, 600);
+    };
   }
 
   angular
