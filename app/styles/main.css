@@ -19,8 +19,6 @@ html {
   background-color: #202020;
 }
 
-
-
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* image gallery */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -430,12 +428,8 @@ header.homeHeader.ng-scope {
 /* skewed background */
 .skw-pages {
   overflow: hidden;
-  position: fixed;
+  position: relative;
   height: 100vh;
-  z-index: -1;
-  width: 100%;
-  top: 0;
-  left: 0;
 }
 
 .skw-page {
@@ -558,10 +552,6 @@ header.homeHeader.ng-scope {
   text-align: center;
 }*/
 
-div#gallery {
-  margin-top: 100vh;
-}
-
 .galleryTitle,
 .aboutTitle {
   text-align: right;
@@ -577,6 +567,7 @@ div#gallery {
   display: inline-block;
   margin: 15px 25px;
   outline: none;
+  /*color: #000;*/
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -897,11 +888,6 @@ h1.contactCta {
   -webkit-animation: scrollDown 2.5s infinite;
   animation: scrollDown 2.5s infinite;
 }
-
-/*-----------------------------------------------------------------------------------------------------------------------------------*/
-/* parallax effect */
-/*-----------------------------------------------------------------------------------------------------------------------------------*/
-
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* footer */

@@ -20,10 +20,6 @@ nav.navbar.show-color {
   background: #fff;
 }
 
-.navbar-brand.logo {
-  cursor: pointer;
-}
-
 nav.navbar.show-color .navbar-brand.logo, nav.navbar.show-color .navbar-nav.navbarLinks>li>a {
   color: #292929;
 }
