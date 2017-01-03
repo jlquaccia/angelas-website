@@ -7,11 +7,51 @@ body {
 }
 
 .navbar.topFixedNav {
-  min-height: 80px;
+  min-height: 70px;
   border: none;
-  background-color: rgba(32,32,32,1);
+  background-color: transparent;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
+  transition: background-color 0.3s;
+  will-change: transform;
+}
+
+nav.navbar.show-color {
+  background: #fff;
+}
+
+nav.navbar.show-color .navbar-brand.logo, nav.navbar.show-color .navbar-nav.navbarLinks>li>a {
+  color: #292929;
+}
+
+.navbar-default .navbar-brand.logo, .navbar-default .navbar-nav.navbarLinks>li>a {
+  color: #fff;
+}
+
+nav.navbar.show-color .navbar-brand.logo {
+  visibility: visible;
+  -webkit-transform: translate(100%, 0);
+  -webkit-transform: translate3d(100%, 0, 0);
+  -ms-transform: translate(100%, 0);
+  -ms-transform: translate3d(100%, 0, 0);
+  transform: translate(100%, 0);
+  transform: translate3d(100%, 0, 0);
+  opacity: 1;
+}
+
+.navbar-brand.logo {
+  visibility: hidden;
+  position: absolute;
+  top: 10px;
+  left: -281px;
+  -webkit-transform: translate(100%, -50%);
+  -webkit-transform: translate3d(100%, -50%, 0);
+  -ms-transform: translate(100%, -50%);
+  -ms-transform: translate3d(100%, -50%, 0);
+  transform: translate(100%, -50%);
+  transform: translate3d(100%, -50%, 0);
+  transition: transform 0.2s ease-in, opacity 0.2s ease-in, visibility 0.2s ease-in;
+  opacity: 0;
 }
 
 div#bs-example-navbar-collapse-1.navLinks {
@@ -21,19 +61,13 @@ div#bs-example-navbar-collapse-1.navLinks {
   transform: translate(0%, -50%);
 }
 
-.navbar-header.navHead {
+/*.navbar-header.navHead {
   position: absolute;
   top: 50%;
   left: 14%;
   transform: translate(0%, -50%);
-  border: 2px solid #fff;
   padding-left: 11px;
-}
-
-.navbar-default .navbar-brand.logo,
-.navbar-default .navbar-nav.navbarLinks>li>a {
-  color: #fff;
-}
+}*/
 
 .navbar-default .navbar-brand.logo .titleBig {
   text-transform: uppercase;
@@ -42,14 +76,9 @@ div#bs-example-navbar-collapse-1.navLinks {
 .navbar-default .navbar-nav.navbarLinks>li>a {
   font-size: 15px;
   text-transform: uppercase;
-  height: 80px;
-  vertical-align: middle;
-  line-height: 50px;
+  height: 70px;
   font-weight: 300;
-}
-
-.navbar-default .navbar-nav.navbarLinks>li>a:hover {
-  background-color: rgba(64,231,184,1);
+  line-height: 40px;
 }
 
 span.titleSmall {
@@ -74,7 +103,7 @@ img.img-responsive.titleImage {
   filter: grayscale(100%);
 }
 
-.fixedAtTop {
+/*.fixedAtTop {
   -webkit-transform: translateY(-80px);
   transform: translateY(-80px);
-}
+}*/
