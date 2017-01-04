@@ -427,9 +427,17 @@ header.homeHeader.ng-scope {
 
 /* skewed background */
 .skw-pages {
-  overflow: hidden;
+  /*overflow: hidden;
   position: relative;
+  height: 100vh;*/
+
+  overflow: hidden;
+  position: fixed;
   height: 100vh;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .skw-page {
@@ -552,6 +560,10 @@ header.homeHeader.ng-scope {
   text-align: center;
 }*/
 
+div#gallery {
+  margin-top: 100vh;
+}
+
 .galleryTitle,
 .aboutTitle {
   text-align: right;
@@ -584,6 +596,10 @@ section#about {
   background-color: #fff;
   color: rgba(32,32,32,1);
   position: relative;
+}
+
+.extraMarginBottom {
+  margin-bottom: 100vh;
 }
 
 section#about .cl-effect-6 {
@@ -689,9 +705,16 @@ section#video {
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 section#contact {
   position: relative;
-  /*padding: 0 20px;*/
   background-color: #202020;
   color: #fff;
+}
+
+.showContact {
+  position: fixed !important;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 #map {
@@ -890,8 +913,5 @@ h1.contactCta {
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
-/* footer */
+/* parallax effect */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
-footer {
-  width: 100%;
-}

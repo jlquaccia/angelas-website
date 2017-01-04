@@ -1,5 +1,5 @@
 (function() {
-  function HomeCtrl($scope, GalleryImages, ScrollEffects, GoogleMaps) {
+  function HomeCtrl($scope, $rootScope, GalleryImages, ScrollEffects, GoogleMaps) {
     $scope.images = GalleryImages.getImages();
     $scope.imageOverlayStatus = 'closed';
     $scope.currentEnlargedImage = '';
@@ -127,6 +127,14 @@
             $('.navbar').removeClass('show-color');
             $('.scrollTop').removeClass('show-button');
           }
+
+          // if (scrollPos > 2500) {
+          //   $('#about').addClass('extraMarginBottom');
+          //   $('#contact').addClass('showContact');
+          // } else {
+          //   $('#about').removeClass('extraMarginBottom');
+          //   $('#contact').removeClass('showContact');
+          // }
         });
       });
     })();
@@ -136,9 +144,15 @@
         scrollTop: $('#gallery').offset().top
       }, 600);
     };
+
+    $rootScope.scrollToTop = function() {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 600);
+    };
   }
 
   angular
     .module('angelasWebsite')
-    .controller('HomeCtrl', ['$scope', 'GalleryImages', 'ScrollEffects', 'GoogleMaps', HomeCtrl]);
+    .controller('HomeCtrl', ['$scope', '$rootScope', 'GalleryImages', 'ScrollEffects', 'GoogleMaps', HomeCtrl]);
 })();
