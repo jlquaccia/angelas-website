@@ -112,6 +112,8 @@ img.trigger-overlay {
   transition: all .5s;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  z-index: 9;
+  position: relative;
 }
 
 img.trigger-overlay:hover {
@@ -119,6 +121,42 @@ img.trigger-overlay:hover {
   transform: scale(0.9);
   -webkit-filter: brightness(0.4);
   filter: brightness(0.4);
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* vertical lines */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+.vr1 {
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  left: 50%;
+  top: 0;
+  margin-left: -1px;
+  background: #ddd;
+  z-index: 1;
+}
+
+.vr2 {
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  left: 15%;
+  top: 0;
+  margin-left: -1px;
+  background: #ddd;
+  z-index: 1;
+}
+
+.vr3 {
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  left: 85%;
+  top: 0;
+  margin-left: -1px;
+  background: #ddd;
+  z-index: 1;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -562,30 +600,40 @@ header.homeHeader.ng-scope {
 
 div#gallery {
   margin-top: 100vh;
+  position: relative;
+  z-index: 9;
+  background-color: #fff;
 }
 
-.galleryTitle,
-.aboutTitle {
+.galleryTitle {
   text-align: right;
 }
 
-.videoTitle,
-.contactTitle {
+.aboutTitle {
   text-align: left;
 }
 
-.cl-effect-6 div {
+.videoTitle {
+  text-align: left;
+}
+
+.contactTitle {
+  text-align: right;
+}
+
+.cl-effect-6.galleryTitle div {
   position: relative;
   display: inline-block;
   margin: 15px 25px;
   outline: none;
-  /*color: #000;*/
+  color: #fff !important;
   text-decoration: none;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 1px;
   font-weight: 300;
   font-size: 2.35em;
-  padding: 10px 20px;
+  padding: 0px 5px 5px 7px;
+  background-color: rgba(41,41,41,1);
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -598,53 +646,61 @@ section#about {
   position: relative;
 }
 
-.extraMarginBottom {
-  margin-bottom: 100vh;
-}
-
-section#about .cl-effect-6 {
-  background-color: #fff;
-}
-
-section#about .cl-effect-6 div {
-  color: rgba(32,32,32,1);
-}
-
-section#about .cl-effect-6 .b::before,
-section#about .cl-effect-6 .b.about::after {
-  background: rgba(32,32,32,1);
-}
-
-.aboutTextWrapper.text-left {
-  width: 90%;
-  margin: 56px;
-  padding: 0 50px;
-}
-
-.aboutTextWrapper h1 {
-  display: inline-block;
-  letter-spacing: -3px;
-  text-transform: lowercase;
-  font-weight: 900;
-  font-size: 6.5em;
-}
-
-.aboutTextWrapper p {
-  text-transform: none;
-  width: 90%;
-  margin: 20px 0;
-  font-size: 2em;
-}
-
-.aboutBorder {
-  position: absolute;
-  width: 90%;
-  height: 70%;
-  border: 5px solid #202020;
+.aboutTitleHeader {
+  width: 248px;
   margin: 0 auto;
-  left: 0;
-  right: 0;
-  top: 150px;
+  position: relative;
+  z-index: 10;
+  top: 25px;
+}
+
+.aboutTitleHeader h3 {
+  color: #fff;
+  font-size: 2.35em;
+  background-color: rgba(41,41,41,1);
+  padding: 0 7px 0 4px;
+  font-weight: 300;
+  position: relative;
+  left: 190px;
+  top: 25px;
+  display: inline-block;
+  margin-top: 100px;
+}
+
+.aboutTitleHeader h1 {
+  color: rgba(248,189,1,1);
+  font-size: 50px;
+  margin-top: 0;
+  background-color: rgba(242,240,230,1);
+  padding: 0 7px 0 4px;
+  font-weight: 300;
+}
+
+.bigBlock {
+  background-color: rgba(54,57,65,1);
+  width: 100%;
+  height: 300px;
+  z-index: 9;
+  position: absolute;
+  left: 15%;
+}
+
+.littleBlock {
+  background-color: rgba(249,195,26,1);
+  width: 780px;
+  z-index: 9;
+  position: absolute;
+  bottom: 10%;
+  left: -150%;
+}
+
+.littleBlock p {
+  color: rgba(255,255,255,1);
+  padding: 10px;
+}
+
+.littleBlockWrapper {
+  height: 400px;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -690,75 +746,73 @@ section#about .cl-effect-6 .b.about::after {
 }
 
 section#video {
-  /*padding: 0 20px 25px;*/
-  background-color: #202020;
   color: #fff;
   margin-top: 25px;
+  position: relative;
+  z-index: 10;
 }
 
 .videoTitle {
   margin-top: 0;
+  height: 81px;
+}
+
+.videoTitleHeader {
+  text-align: center;
+}
+
+.videoTitleHeader h3 {
+  display: inline-block;
+  color: #fff;
+  font-size: 2.35em;
+  background-color: rgba(41,41,41,1);
+  padding: 0 7px 0 4px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.videoDescriptionBlock {
+  width: 440px;
+  height: 230px;
+  background-color: rgba(249,195,26,1);
+  position: absolute;
+  bottom: -20%;
+  left: -70%;
+  z-index: -1;
+}
+
+.videoDescriptionBlockWrapper {
+  height: 474px;
+}
+
+.videoDescriptionBlockSmall {
+  width: 250px;
+  background-color: rgba(178,178,178,1);
+  position: absolute;
+  bottom: 5%;
+  left: 30%;
+}
+
+.videoDescriptionBlockSmall p {
+  padding: 10px;
+}
+
+.currentVideo {
+  display: -webkit-inline-box;
+  background-color: rgba(242,240,230,1);
+  color: rgba(178,178,178,1);
+  position: relative;
+  left: 10%;
+  padding: 0 7px 0 4px;
+  top: -10px;
+  z-index: -1;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* contact */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 section#contact {
-  position: relative;
-  background-color: #202020;
-  color: #fff;
-}
-
-.showContact {
-  position: fixed !important;
-  z-index: -1;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-
-#map {
-  width: 100%;
-  height: 100%;
-}
-
-/* hide google logo, trademark and tos */
-a[href^="http://maps.google.com/maps"]{display:none !important}
-a[href^="https://maps.google.com/maps"]{display:none !important}
-
-.gmnoprint a, .gmnoprint span, .gm-style-cc {
-  display:none;
-}
-.gmnoprint div {
-  background:none !important;
-}
-
-.mapWrapper {
-  height: 565px;
-}
-
-.col-md-6.p0.text-center.videoDescriptionWrapper {
-  height: 565px;
-  padding: 0 20px;
-  background-color: #4D4946;
-}
-
-ul.contactList {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-ul.contactList li {
-  display: inline-block;
-}
-
-ul.contactList li a {
-  color: #fff;
-}
-
-h1.contactCta {
-  font-weight: 200;
+  height: 100vh;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/

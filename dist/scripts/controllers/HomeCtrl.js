@@ -56,7 +56,7 @@
     // invoke right away
     (function() {
       // ScrollEffects.navShowHideScrollEffect();
-      GoogleMaps.initMap();
+      // GoogleMaps.initMap();
 
       $(document).ready(function() {
         // Scrollspy initiation
@@ -123,18 +123,19 @@
           if (scrollPos > 0) {
             $('.navbar').addClass('show-color');
             $('.scrollTop').addClass('show-button');
+
+            if (scrollPos >= 1950) {
+              $('.navbar').removeClass('show-color');
+              $('.navbar').addClass('show-other-color');
+            } else {
+              $('.navbar').addClass('show-color');
+              $('.navbar').removeClass('show-other-color');
+            }
           } else {
             $('.navbar').removeClass('show-color');
+            $('.navbar').removeClass('show-other-color');
             $('.scrollTop').removeClass('show-button');
           }
-
-          // if (scrollPos > 2500) {
-          //   $('#about').addClass('extraMarginBottom');
-          //   $('#contact').addClass('showContact');
-          // } else {
-          //   $('#about').removeClass('extraMarginBottom');
-          //   $('#contact').removeClass('showContact');
-          // }
         });
       });
     })();
