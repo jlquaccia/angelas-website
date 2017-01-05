@@ -12,6 +12,7 @@ body {
   -webkit-text-size-adjust: 100%;
   position: relative;
   min-height: 100%;
+  padding-bottom: 0 !important;
 }
 
 html {
@@ -577,7 +578,7 @@ header.homeHeader.ng-scope {
 }
 
 .skw-page-1 .skw-page__half--right .skw-page__content {
-  background: #292929;
+  background: rgba(130,17,34,1);
 }
 
 .headerBorder {
@@ -668,10 +669,10 @@ section#about {
 }
 
 .aboutTitleHeader h1 {
-  color: rgba(248,189,1,1);
+  color: rgba(130,17,34,1);
   font-size: 50px;
   margin-top: 0;
-  background-color: rgba(242,240,230,1);
+  background-color: rgba(236,232,229,1);
   padding: 0 7px 0 4px;
   font-weight: 300;
 }
@@ -686,7 +687,7 @@ section#about {
 }
 
 .littleBlock {
-  background-color: rgba(249,195,26,1);
+  background-color: rgba(130,17,34,1);
   width: 780px;
   z-index: 9;
   position: absolute;
@@ -750,6 +751,7 @@ section#video {
   margin-top: 25px;
   position: relative;
   z-index: 10;
+  margin-bottom: 100px;
 }
 
 .videoTitle {
@@ -774,7 +776,7 @@ section#video {
 .videoDescriptionBlock {
   width: 440px;
   height: 230px;
-  background-color: rgba(249,195,26,1);
+  background-color: rgba(130,17,34,1);
   position: absolute;
   bottom: -20%;
   left: -70%;
@@ -799,8 +801,8 @@ section#video {
 
 .currentVideo {
   display: -webkit-inline-box;
-  background-color: rgba(242,240,230,1);
-  color: rgba(178,178,178,1);
+  background-color: rgba(236,232,229,1);
+  color: rgba(41,41,41,1);
   position: relative;
   left: 10%;
   padding: 0 7px 0 4px;
@@ -808,11 +810,167 @@ section#video {
   z-index: -1;
 }
 
+.currentVideo h3 {
+  font-weight: 100;
+}
+
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* contact */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
-section#contact {
-  height: 100vh;
+.bottomSkewedBg {
+  background-color: rgba(178,178,178,1);
+  position: absolute;
+  z-index: 1;
+  -webkit-transform: skew(0deg, 4deg);
+  -ms-transform: skew(0deg, 4deg);
+  transform: skew(0deg, 4deg);
+  margin-top: 10em;
+  width: 100%;
+  height: 300px;
+}
+
+.bottomSkewedBg .content {
+  -webkit-transform: skew(0deg, -4deg);
+  -ms-transform: skew(0deg, -4deg);
+  transform: skew(0deg, -4deg);
+}
+
+.videoTitleHeader .stayInTouch {
+  background-color: #fff;
+  display: inline-block;
+  color: rgba(130,17,34,1);
+  margin-top: 0;
+  padding: 0 7px 0 4px;
+  font-weight: 300;
+}
+
+.bottomSkewedBg .videoTitleHeader {
+  position: relative;
+  top: 25px;
+}
+
+.bottomSkewedBg .videoTitleHeader h3 {
+  position: relative;
+  left: -20px;
+}
+
+#map {
+  width: 700px;
+  height: 350px;
+}
+
+.mapWrapper {
+  position: relative;
+  right: -9em;
+  top: 2em;
+}
+
+.contactBlockWrapper {
+  width: 100%;
+  height: 350px;
+}
+
+.contactBlock {
+  position: absolute;
+  bottom: 25%;
+  right: -60%;
+  background-color: rgba(249,195,26,1);
+  width: 440px;
+  text-align: center;
+  color: rgba(200,156,20,1);
+  z-index: 10;
+}
+
+.contactBlock h2 a {
+  color: #fff;
+  font-weight: 300;
+}
+
+.container.content.ng-scope {
+  background-color: rgba(178,178,178,1);
+  position: relative;
+  z-index: 1;
+  top: 200px;
+  height: 520px;
+  margin: 0;
+  width: 100%;
+}
+
+.container.content .videoTitleHeader h3 {
+  position: relative;
+  left: -25px;
+}
+
+h3.email {
+  margin: 10px;
+}
+
+.social {
+  
+}
+
+.contactBlock {
+  width: 100%;
+  height: 140px;
+  background-color: #fff;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  top: 190px;
+}
+
+.contactBlock ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.contactBlock ul li {
+  display: inline-block;
+  margin: 0;
+  border-right: 1px solid rgba(204,204,204,1);
+  width: 32%;
+}
+
+.contactBlock ul li a {
+  text-decoration: none;
+}
+
+.contactBlock ul li .iconWrapper {
+  transition: top 0.5s;
+  position: relative;
+  top: 0;
+}
+
+.contactBlock ul li .iconWrapper:hover {
+  top: -15px;
+}
+
+.contactBlock ul li:last-child {
+  border: none;
+}
+
+.contactBlock ul li i {
+  font-size: 3em;
+  color: #000;
+}
+
+.contactBlock ul li small {
+  color: #000;
+}
+
+.backContactBlock {
+  width: 80%;
+  height: 40%;
+  position: absolute;
+  background-color: #000;
+  top: 40%;
+  left: 40%;
+  opacity: 0.5;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -829,7 +987,7 @@ section#contact {
   align-items: center;
   justify-content: center;
   position: fixed;
-  right: 20px;
+  left: 20px;
   bottom: 20px;
   width: 44px;
   height: 44px;
@@ -847,6 +1005,7 @@ section#contact {
   transform: translate3d(0, 80px, 0);
   transition: transform 0.2s ease-in;
   opacity: 0.7;
+  z-index: 11;
 }
 
 .scrollTop:hover {

@@ -56,7 +56,7 @@
     // invoke right away
     (function() {
       // ScrollEffects.navShowHideScrollEffect();
-      // GoogleMaps.initMap();
+      GoogleMaps.initMap();
 
       $(document).ready(function() {
         // Scrollspy initiation
