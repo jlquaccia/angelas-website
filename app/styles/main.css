@@ -398,7 +398,7 @@ header.homeHeader.ng-scope {
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 25%;
+  width: 360px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -863,6 +863,7 @@ section#video {
   position: relative;
   right: -9em;
   top: 2em;
+  width: 80%;
 }
 
 .contactBlockWrapper {
