@@ -724,9 +724,9 @@ section#about {
 .videoWrapper iframe {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  left: 10%;
+  width: 62%;
+  height: 470px;
 }
 
 .p0 {
@@ -781,12 +781,12 @@ section#video {
 }
 
 .videoDescriptionBlock {
-  width: 440px;
+  width: 31%;
   height: 230px;
   background-color: rgba(130,17,34,1);
   position: absolute;
   bottom: -20%;
-  left: -70%;
+  right: 15%;
   z-index: -1;
 }
 
@@ -795,11 +795,11 @@ section#video {
 }
 
 .videoDescriptionBlockSmall {
-  width: 250px;
+  width: 18%;
   background-color: rgba(178,178,178,1);
   position: absolute;
   bottom: 5%;
-  left: 30%;
+  right: 5%;
 }
 
 .videoDescriptionBlockSmall p {
@@ -810,11 +810,15 @@ section#video {
   display: -webkit-inline-box;
   background-color: rgba(236,232,229,1);
   color: rgba(41,41,41,1);
-  position: relative;
-  left: 10%;
+  position: absolute;
+  bottom: -11%;
   padding: 0 7px 0 4px;
-  top: -10px;
+  left: 20%;
   z-index: -1;
+}
+
+.currentVideo2 {
+  display: none;
 }
 
 .currentVideo h3 {

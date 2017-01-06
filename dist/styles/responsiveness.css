@@ -1,8 +1,58 @@
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* 1200px and below */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
-@media (max-width: 1200px) {
-  
+@media (max-width: 1145px) {
+  .videoDescriptionBlock {
+    width: 38%;
+    height: 130px;
+    background-color: rgba(130,17,34,1);
+    position: absolute;
+    z-index: -1;
+    margin: 0 auto;
+    right: 0;
+    left: 3%;
+    bottom: -44%;
+  }
+
+  .videoDescriptionBlockSmall {
+    width: 38%;
+    background-color: rgba(178,178,178,1);
+    position: absolute;
+    bottom: -41%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 470px;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .currentVideo {
+    display: none;
+  }
+
+  .currentVideo2 {
+    display: inline-block;
+    color: rgba(41,41,41,1);
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .currentVideo2 h3 {
+    display: -webkit-inline-box;
+    font-size: 15px;
+    font-weight: 300;
+    background-color: rgba(236,232,229,1);
+    padding: 5px;
+  }
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
