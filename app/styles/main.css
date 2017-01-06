@@ -680,25 +680,31 @@ section#about {
 
 .bigBlock {
   background-color: rgba(54,57,65,1);
-  width: 100%;
+  width: 75%;
   height: 300px;
   z-index: 9;
-  position: absolute;
-  left: 15%;
+  position: relative;
+  margin: 0 auto;
 }
 
 .littleBlock {
-  background-color: rgba(130,17,34,1);
-  width: 780px;
+  width: 75%;
   z-index: 9;
+  margin: 0 auto;
   position: absolute;
-  bottom: 10%;
-  left: -150%;
+  top: 15%;
+  right: 5%;
 }
 
 .littleBlock p {
   color: rgba(255,255,255,1);
   padding: 10px;
+  background-color: rgba(130,17,34,1);
+}
+
+.littleBlock p:first-child {
+  position: relative;
+  left: -15%;
 }
 
 .littleBlockWrapper {
