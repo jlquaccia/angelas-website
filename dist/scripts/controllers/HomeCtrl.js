@@ -151,6 +151,10 @@
         scrollTop: 0
       }, 600);
     };
+
+    $scope.toggleHamburger = function() {
+      $('.mobileNav').toggleClass('open');
+    };
   }
 
   angular

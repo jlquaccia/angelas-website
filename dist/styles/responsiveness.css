@@ -83,6 +83,11 @@
     display: none;
   }
 
+  .mobileNav,
+  .mobileNavMenu {
+    display: block;
+  }
+
   .headerBorder {
     height: 90%;
     top: 5%;
