@@ -154,6 +154,7 @@
 
     $scope.toggleHamburger = function() {
       $('.mobileNav').toggleClass('open');
+      $('.mobileNavMenu').slideToggle();
     };
   }
 

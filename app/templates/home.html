@@ -6,16 +6,16 @@
 </div>
 
 <div class="mobileNavMenu">
-  <a class="mobileLogo" ng-click="scrollToTop()">
+  <a class="mobileLogo" ng-click="scrollToTop(); toggleHamburger()">
     <span class="aSha">Angela Sha </span>
     <span class="subTitle">Pole Dance Performer and Instructor</span>
   </a>
 
   <ul>
-    <li><hr class="one"><a href="#gallery"><em>Gallery</em></a></li>
-    <li><hr class="two"><a href="#about"><em>About</em></a></li>
-    <li><hr class="three"><a href="#video"><em>Video</em></a></li>
-    <li><hr class="four"><a href="#contact"><em>Contact</em></a></li>
+    <li ng-click="toggleHamburger()"><span class="navLine"></span><a href="#gallery"><em>Gallery</em></a></li>
+    <li ng-click="toggleHamburger()"><span class="navLine"></span><a href="#about"><em>About</em></a></li>
+    <li ng-click="toggleHamburger()"><span class="navLine"></span><a href="#video"><em>Video</em></a></li>
+    <li ng-click="toggleHamburger()"><span class="navLine"></span><a href="#contact"><em>Contact</em></a></li>
   </ul>
 </div>
 

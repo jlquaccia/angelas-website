@@ -356,24 +356,15 @@ img.img-responsive.titleImage {
   color: #fff;
 }
 
-.mobileNavMenu ul li hr {
-  position: absolute;
-  top: 92px;
-  width: 23.48px;
-  left: 16%;
-  border-color: rgba(130,17,34,1);
-}
-
-hr.two {
-  left: 35% !important;
-}
-
-hr.three {
-  left: 54% !important;
-}
-
-hr.four {
-  left: 72% !important;
+.mobileNavMenu li span.navLine {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-right: 16px;
+  width: 20px;
+  height: 1px;
+  background-color: rgba(130,17,34,1);
+  overflow: hidden;
 }
 
 a.mobileLogo {
