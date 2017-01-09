@@ -80,16 +80,25 @@ html {
   background: #bbb;
 }
 
-.products.gallery figure figcaption::-webkit-scrollbar-thumb:hover {
-  background: #999;
-}
+@media (hover:hover) {
+  .products.gallery figure figcaption::-webkit-scrollbar-thumb:hover {
+    background: #999;
+  }
 
-.products.gallery figure:hover::after {
-  background: rgba(0,0,0,0.8);
-}
+  .products.gallery figure:hover figcaption {
+    opacity: 1;
+  }
 
-.products.gallery figure:hover figcaption {
-  opacity: 1;
+  .products.gallery figure:hover::after {
+    background: rgba(0,0,0,0.8);
+  }
+
+  img.trigger-overlay:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-filter: brightness(0.4);
+    filter: brightness(0.4);
+  }
 }
 
 .ion-ios-close-empty:before {
@@ -105,13 +114,6 @@ img.trigger-overlay {
   backface-visibility: hidden;
   z-index: 9;
   position: relative;
-}
-
-img.trigger-overlay:hover {
-  -webkit-transform: scale(0.9);
-  transform: scale(0.9);
-  -webkit-filter: brightness(0.4);
-  filter: brightness(0.4);
 }
 
 #mobileGallery {
