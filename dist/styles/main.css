@@ -569,7 +569,7 @@ header.homeHeader.ng-scope {
 }
 
 .skw-page-1 .skw-page__half--left .skw-page__content {
-  background-image: url("https://s3-us-west-1.amazonaws.com/angelas-website/FullSizeRender.png");
+  background-image: url("/assets/images/FullSizeRender.jpeg");
 }
 
 .skw-page-1 .skw-page__half--right .skw-page__content {
