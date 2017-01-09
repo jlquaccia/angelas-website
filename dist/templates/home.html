@@ -58,14 +58,14 @@
   <div class="galleryWrapper">
     <section class="products gallery">
       <figure ng-repeat="image in images">
-        <img class="trigger-overlay" src="{{image.src}}" alt="Angela Sha" ng-click="openImageOverlay($index);">
+        <img class="trigger-overlay" src="{{image.largeSrc}}" alt="Angela Sha" ng-click="openImageOverlay($index);">
       </figure>
     </section>
 
     <!-- gallery image overlay -->
     <div class="overlay overlay-hugeinc" ng-class="imageOverlayStatus">
       <i class="overlay-close ion-ios-close-empty" ng-click="closeImageOverlay();"></i>
-      <img class="{{currentEnlargedImage.class}}" src="{{currentEnlargedImage.src}}" alt="Angela Sha">
+      <img class="{{currentEnlargedImage.class}}" src="{{currentEnlargedImage.largeSrc}}" alt="Angela Sha">
       <i ng-class="leftArrow" class="ion-ios-arrow-thin-left" ng-click="prevImage();"></i>
       <i ng-class="rightArrow" class="ion-ios-arrow-thin-right" ng-click="nextImage();"></i>
     </div>

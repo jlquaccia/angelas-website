@@ -21,21 +21,21 @@
     // ];
 
     var images = [
-      {src: 'assets/images/FullSizeRender.jpeg', id: 0, class: 'img0'},
-      {src: 'assets/images/Pole Backbend.jpeg', id: 1, class: 'img1'},
-      {src: 'assets/images/eight.jpeg', id: 2, class: 'img2'},
-      {src: 'assets/images/eleven.jpeg', id: 3, class: 'img3'},
-      {src: 'assets/images/five.jpeg', id: 4, class: 'img4'},
-      {src: 'assets/images/four.jpeg', id: 5, class: 'img5'},
-      {src: 'assets/images/nine.jpeg', id: 6, class: 'img6'},
-      {src: 'assets/images/one.jpeg', id: 7, class: 'img7'},
-      {src: 'assets/images/seven.jpeg', id: 8, class: 'img8'},
-      {src: 'assets/images/six.jpeg', id: 9, class: 'img9'},
-      {src: 'assets/images/ten.jpeg', id: 10, class: 'img10'},
-      {src: 'assets/images/thirteen.jpeg', id: 11, class: 'img11'},
-      {src: 'assets/images/three.jpeg', id: 12, class: 'img12'},
-      {src: 'assets/images/twelve.jpeg', id: 13, class: 'img13'},
-      {src: 'assets/images/two.jpeg', id: 14, class: 'img14'},
+      {largeSrc: 'assets/images/FullSizeRender.jpeg', src: 'assets/images/mobile/FullSizeRender.jpeg', id: 0, class: 'img0'},
+      {largeSrc: 'assets/images/Pole Backbend.jpeg', src: 'assets/images/mobile/Pole Backbend.jpeg', id: 1, class: 'img1'},
+      {largeSrc: 'assets/images/eight.jpeg', src: 'assets/images/mobile/eight.jpeg', id: 2, class: 'img2'},
+      {largeSrc: 'assets/images/eleven.jpeg', src: 'assets/images/mobile/eleven.jpeg', id: 3, class: 'img3'},
+      {largeSrc: 'assets/images/five.jpeg', src: 'assets/images/mobile/five.jpeg', id: 4, class: 'img4'},
+      {largeSrc: 'assets/images/four.jpeg', src: 'assets/images/mobile/four.jpeg', id: 5, class: 'img5'},
+      {largeSrc: 'assets/images/nine.jpeg', src: 'assets/images/mobile/nine.jpeg', id: 6, class: 'img6'},
+      {largeSrc: 'assets/images/one.jpeg', src: 'assets/images/mobile/one.jpeg', id: 7, class: 'img7'},
+      {largeSrc: 'assets/images/seven.jpeg', src: 'assets/images/mobile/seven.jpeg', id: 8, class: 'img8'},
+      {largeSrc: 'assets/images/six.jpeg', src: 'assets/images/mobile/six.jpeg', id: 9, class: 'img9'},
+      {largeSrc: 'assets/images/ten.jpeg', src: 'assets/images/mobile/ten.jpeg', id: 10, class: 'img10'},
+      {largeSrc: 'assets/images/thirteen.jpeg', src: 'assets/images/mobile/thirteen.jpeg', id: 11, class: 'img11'},
+      {largeSrc: 'assets/images/three.jpeg', src: 'assets/images/mobile/three.jpeg', id: 12, class: 'img12'},
+      {largeSrc: 'assets/images/twelve.jpeg', src: 'assets/images/mobile/twelve.jpeg', id: 13, class: 'img13'},
+      {largeSrc: 'assets/images/two.jpeg', src: 'assets/images/mobile/two.jpeg', id: 14, class: 'img14'},
     ];
 
     GalleryImages.getImages = function() {
