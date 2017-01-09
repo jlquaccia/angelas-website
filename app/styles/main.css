@@ -80,7 +80,26 @@ html {
   background: #bbb;
 }
 
-@media (hover:hover) {
+.ion-ios-close-empty:before {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+}
+
+img.trigger-overlay {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 9;
+  position: relative;
+}
+
+#mobileGallery {
+  display: none;
+}
+
+@media all and (min-width: 900px) {
   .products.gallery figure figcaption::-webkit-scrollbar-thumb:hover {
     background: #999;
   }
@@ -99,25 +118,6 @@ html {
     -webkit-filter: brightness(0.4);
     filter: brightness(0.4);
   }
-}
-
-.ion-ios-close-empty:before {
-  position: absolute;
-  top: -10px;
-  left: 20px;
-}
-
-img.trigger-overlay {
-  -webkit-transition: all .5s;
-  transition: all .5s;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  z-index: 9;
-  position: relative;
-}
-
-#mobileGallery {
-  display: none;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -217,10 +217,6 @@ img.trigger-overlay {
   color: #fff;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
-}
-
-.overlay ul li a:hover, .overlay ul li a:focus {
-  color: #e3fcb1;
 }
 
 /* Effects */
@@ -378,6 +374,12 @@ i.ion-ios-arrow-thin-right {
   
   .overlay ul li {
     min-height: 34px;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .overlay ul li a:hover, .overlay ul li a:focus {
+    color: #e3fcb1;
   }
 }
 
@@ -934,10 +936,6 @@ h3.email {
   top: 0;
 }
 
-.contactBlock ul li .iconWrapper:hover {
-  top: -15px;
-}
-
 .contactBlock ul li:last-child {
   border: none;
 }
@@ -959,6 +957,12 @@ h3.email {
   top: 40%;
   left: 40%;
   opacity: 0.5;
+}
+
+@media all and (min-width: 900px) {
+  .contactBlock ul li .iconWrapper:hover {
+    top: -15px;
+  }
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -996,11 +1000,6 @@ h3.email {
   z-index: 11;
 }
 
-.scrollTop:hover {
-  color: #e7e6f1;
-  opacity: 1;
-}
-
 .scrollTop.show-button {
   -webkit-transform: translate(0, 0);
   -webkit-transform: translate3d(0, 0, 0);
@@ -1008,6 +1007,13 @@ h3.email {
   -ms-transform: translate3d(0, 0, 0);
   transform: translate(0, 0);
   transform: translate3d(0, 0, 0);
+}
+
+@media all and (min-width: 900px) {
+  .scrollTop:hover {
+    color: #e7e6f1;
+    opacity: 1;
+  }
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
