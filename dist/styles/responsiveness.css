@@ -317,10 +317,6 @@
     background-position: -120px 0px;
   }
 
-  .img0, .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13, .img14 {
-    width: 38%;
-  }
-
   .overlay .overlay-close {
     top: 0;
   }
@@ -337,5 +333,9 @@
 @media (max-width: 700px) and (orientation: landscape) {
   #video .videoTitleHeader h3 {
     margin-top: 420px;
+  }
+
+  .img0, .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13, .img14 {
+    width: 38%;
   }
 }
