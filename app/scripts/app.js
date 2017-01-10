@@ -18,6 +18,6 @@
   }
 
   angular
-    .module('angelasWebsite', ['ui.router'])
+    .module('angelasWebsite', ['ui.router', 'duScroll'])
     .config(config);
 })();

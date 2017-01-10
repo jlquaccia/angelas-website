@@ -644,6 +644,7 @@ section#about {
   background-color: #fff;
   color: rgba(32,32,32,1);
   position: relative;
+  margin-top: 100px;
 }
 
 .aboutTitleHeader {
@@ -664,7 +665,6 @@ section#about {
   left: 190px;
   top: 25px;
   display: inline-block;
-  margin-top: 100px;
 }
 
 .aboutTitleHeader h1 {

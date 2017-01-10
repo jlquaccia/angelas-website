@@ -12,10 +12,10 @@
   </a>
 
   <ul>
-    <li ng-click="toggleHamburger()"><span class="navLine"></span><a href="#gallery"><em>Gallery</em></a></li>
-    <li ng-click="toggleHamburger()"><span class="navLine"></span><a href="#about"><em>About</em></a></li>
-    <li ng-click="toggleHamburger()"><span class="navLine"></span><a href="#video"><em>Video</em></a></li>
-    <li ng-click="toggleHamburger()"><span class="navLine"></span><a href="#contact"><em>Contact</em></a></li>
+    <li du-smooth-scroll="gallery" duration="1000" ng-click="toggleHamburger()"><span class="navLine"></span><a href=""><em>Gallery</em></a></li>
+    <li du-smooth-scroll="aboutMobile" duration="1000" ng-click="toggleHamburger()"><span class="navLine"></span><a  href=""><em>About</em></a></li>
+    <li du-smooth-scroll="videoMobile" duration="1000" ng-click="toggleHamburger()"><span class="navLine"></span><a href=""><em>Video</em></a></li>
+    <li du-smooth-scroll="contactMobile" duration="1000" ng-click="toggleHamburger()"><span class="navLine"></span><a href=""><em>Contact</em></a></li>
   </ul>
 </div>
 
@@ -105,7 +105,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="aboutTitleHeader">
+        <div id="aboutMobile" class="aboutTitleHeader">
           <h3>about</h3>
           <h1>angela sha</h1>
         </div>
@@ -129,7 +129,7 @@
   <div class="cl-effect-6 videoTitle">
     <div class="a" href="#"></div>
   </div>
-  <div class="container-fluid">
+  <div id="videoMobile" class="container-fluid">
     <div class="row">
       <div class="col-md-12">
         <div class="videoTitleHeader">
@@ -172,7 +172,7 @@
 
 <div class="bottomSkewedBg"></div>
 
-<div class="container content">
+<div id="contactMobile" class="container content">
   <div class="row">
     <div class="col-md-12">
       <div class="videoTitleHeader">
