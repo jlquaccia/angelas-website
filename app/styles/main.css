@@ -595,9 +595,6 @@ header.homeHeader.ng-scope {
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* section titles */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
-/*.cl-effect-6 {
-  text-align: center;
-}*/
 
 div#gallery {
   margin-top: 100vh;
@@ -739,9 +736,11 @@ p.rightP {
 .videoWrapper iframe {
   position: absolute;
   top: 0;
-  left: 10%;
-  width: 62%;
+  left: 0;
+  width: 80%;
   height: 470px;
+  right: 0;
+  margin: 0 auto;
 }
 
 .p0 {
@@ -800,9 +799,10 @@ section#video {
   height: 100%;
   background-color: rgba(130,17,34,1);
   position: absolute;
-  bottom: -50%;
   right: 60%;
   z-index: -1;
+  bottom: -9%;
+  left: 3%;
 }
 
 .videoDescriptionBlockWrapper {
@@ -810,12 +810,14 @@ section#video {
 }
 
 .videoDescriptionBlockSmall {
-  width: 18%;
+  color: rgba(41,41,41,1);
+  width: 50%;
   background-color: #fff;
   position: absolute;
-  bottom: 5%;
-  right: 5%;
-  color: rgba(41,41,41,1);
+  bottom: -31%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
 }
 
 .videoDescriptionBlockSmall p {
@@ -823,18 +825,31 @@ section#video {
 }
 
 .currentVideo {
-  display: -webkit-inline-box;
   background-color: #fff;
   color: rgba(41,41,41,1);
   position: absolute;
-  bottom: -11%;
+  bottom: -45px;
   padding: 0 7px 0 4px;
-  left: 20%;
   z-index: -1;
+  width: 233px;
+  text-align: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  display: inline-block;
+  width: 233px;
 }
 
 .currentVideo h3 {
   font-weight: 100;
+  font-size: 15px;
+  padding: 0;
+  display: inline;
+}
+
+.videoStuffWrapper .videoDescriptionBlock {
+  display: none;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
