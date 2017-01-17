@@ -124,16 +124,16 @@
             $('.navbar').addClass('show-color');
             $('.scrollTop').addClass('show-button');
 
-            if (scrollPos >= 1950) {
-              $('.navbar').removeClass('show-color');
-              $('.navbar').addClass('show-other-color');
-            } else {
-              $('.navbar').addClass('show-color');
-              $('.navbar').removeClass('show-other-color');
-            }
+            // if (scrollPos >= 1950) {
+            //   $('.navbar').removeClass('show-color');
+            //   $('.navbar').addClass('show-other-color');
+            // } else {
+            //   $('.navbar').addClass('show-color');
+            //   $('.navbar').removeClass('show-other-color');
+            // }
           } else {
             $('.navbar').removeClass('show-color');
-            $('.navbar').removeClass('show-other-color');
+            // $('.navbar').removeClass('show-other-color');
             $('.scrollTop').removeClass('show-button');
           }
         });

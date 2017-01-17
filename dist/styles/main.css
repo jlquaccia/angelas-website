@@ -13,6 +13,7 @@ body {
   position: relative;
   min-height: 100%;
   padding-bottom: 0 !important;
+  background-color: rgba(41,41,41,1);
 }
 
 html {
@@ -602,11 +603,11 @@ div#gallery {
   margin-top: 100vh;
   position: relative;
   z-index: 9;
-  background-color: #fff;
+  background-color: rgba(41,41,41,1);
 }
 
 .galleryTitle {
-  text-align: right;
+  text-align: center;
 }
 
 .aboutTitle {
@@ -626,14 +627,14 @@ div#gallery {
   display: inline-block;
   margin: 15px 25px;
   outline: none;
-  color: #fff !important;
+  color: rgba(41,41,41,1);
   text-decoration: none;
-  /* text-transform: uppercase; */
   letter-spacing: 1px;
   font-weight: 300;
   font-size: 2.35em;
   padding: 0px 5px 5px 7px;
-  background-color: rgba(41,41,41,1);
+  background-color: #fff;
+  text-transform: uppercase;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -641,7 +642,7 @@ div#gallery {
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 section#about {
   height: 100vh;
-  background-color: #fff;
+  background-color: rgba(41,41,41,1);
   color: rgba(32,32,32,1);
   position: relative;
   margin-top: 100px;
@@ -650,9 +651,7 @@ section#about {
 .aboutTitleHeader {
   width: 248px;
   margin: 0 auto;
-  position: relative;
   z-index: 10;
-  top: 25px;
 }
 
 .aboutTitleHeader h3 {
@@ -668,12 +667,17 @@ section#about {
 }
 
 .aboutTitleHeader h1 {
-  color: rgba(130,17,34,1);
-  font-size: 50px;
-  margin-top: 0;
-  background-color: rgba(236,232,229,1);
-  padding: 0 7px 0 4px;
+  color: rgba(41,41,41,1);
+  font-size: 2.35em;
+  margin: 100px auto 10px;
+  background-color: #fff;
+  padding: 0px 5px 5px 7px;
   font-weight: 300;
+  text-align: center;
+  width: 55%;
+  position: relative;
+  z-index: 9;
+  text-transform: uppercase;
 }
 
 .bigBlock {
@@ -689,24 +693,37 @@ section#about {
   width: 75%;
   z-index: 9;
   margin: 0 auto;
-  position: absolute;
-  top: 15%;
-  right: 5%;
 }
 
 .littleBlock p {
-  color: rgba(255,255,255,1);
+  color: rgba(41,41,41,1);
   padding: 10px;
-  background-color: rgba(130,17,34,1);
-}
-
-.littleBlock p:first-child {
+  background-color: #fff;
   position: relative;
-  left: -15%;
+  z-index: 9;
 }
 
 .littleBlockWrapper {
   height: 400px;
+}
+
+p.leftP {
+  left: -5%;
+}
+
+p.rightP {
+  right: -5%;
+}
+
+.aboutTitleHeader h1,
+.cl-effect-6.galleryTitle div,
+.videoTitleHeader h3 {
+  color: rgba(41,41,41,1);
+  font-size: 2.35em;
+  background-color: #fff;
+  padding: 0px 5px 5px 7px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -770,12 +787,12 @@ section#video {
 
 .videoTitleHeader h3 {
   display: inline-block;
-  color: #fff;
+  color: rgba(41,41,41,1);
   font-size: 2.35em;
-  background-color: rgba(41,41,41,1);
+  background-color: #fff;
   padding: 0 7px 0 4px;
   font-weight: 300;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .videoDescriptionBlock {
@@ -794,10 +811,11 @@ section#video {
 
 .videoDescriptionBlockSmall {
   width: 18%;
-  background-color: rgba(178,178,178,1);
+  background-color: #fff;
   position: absolute;
   bottom: 5%;
   right: 5%;
+  color: rgba(41,41,41,1);
 }
 
 .videoDescriptionBlockSmall p {
@@ -806,7 +824,7 @@ section#video {
 
 .currentVideo {
   display: -webkit-inline-box;
-  background-color: rgba(236,232,229,1);
+  background-color: #fff;
   color: rgba(41,41,41,1);
   position: absolute;
   bottom: -11%;
@@ -814,10 +832,6 @@ section#video {
   left: 20%;
   z-index: -1;
 }
-
-/*.currentVideo2 {
-  display: none;
-}*/
 
 .currentVideo h3 {
   font-weight: 100;
@@ -847,10 +861,11 @@ section#video {
 .videoTitleHeader .stayInTouch {
   background-color: #fff;
   display: inline-block;
-  color: rgba(130,17,34,1);
+  color: rgba(41,41,41,1);
   margin-top: 0;
   padding: 0 7px 0 4px;
   font-weight: 300;
+  font-size: 1.5em;
 }
 
 .bottomSkewedBg .videoTitleHeader {
@@ -889,11 +904,6 @@ section#video {
   height: 520px;
   margin: 0;
   width: 100%;
-}
-
-.container.content .videoTitleHeader h3 {
-  position: relative;
-  left: -25px;
 }
 
 h3.email {
@@ -957,6 +967,10 @@ h3.email {
   top: 40%;
   left: 40%;
   opacity: 0.5;
+}
+
+#contactMobile .videoTitleHeader h3 {
+
 }
 
 @media all and (min-width: 900px) {
