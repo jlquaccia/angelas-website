@@ -29,11 +29,11 @@ html {
   -moz-column-width: 280px;
   -o-column-width: 280px;
   column-width: 280px;
-  -webkit-column-gap: 5px;
-  -moz-column-gap: 5px;
-  -o-column-gap: 5px;
-  column-gap: 5px;
-  padding: 0 5px;
+  /* -webkit-column-gap: 5px; */
+  /*-moz-column-gap: 5px;
+  -o-column-gap: 5px;*/
+  /* column-gap: 5px; */
+  /* padding: 0 5px; */
   font-size: 0;
 }
 
@@ -42,7 +42,8 @@ html {
   display: inline-block;
   width: 100%;
   height: auto;
-  margin: 0 0 5px 0;
+  /*margin: 0 0 5px 0;*/
+  margin: 0;
 }
 
 .products.gallery figure img {
