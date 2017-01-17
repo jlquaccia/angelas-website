@@ -598,7 +598,7 @@ header.homeHeader.ng-scope {
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 
 div#gallery {
-  margin-top: 100vh;
+  margin-top: 0;
   position: relative;
   z-index: 9;
   background-color: rgba(41,41,41,1);
@@ -640,10 +640,10 @@ div#gallery {
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 section#about {
   height: 100vh;
-  background-color: rgba(41,41,41,1);
+  background-color: rgba(130,17,34,1);
   color: rgba(32,32,32,1);
   position: relative;
-  margin-top: 100px;
+  /*margin-top: 100px;*/
 }
 
 .aboutTitleHeader {
@@ -667,7 +667,7 @@ section#about {
 .aboutTitleHeader h1 {
   color: rgba(41,41,41,1);
   font-size: 2.35em;
-  margin: 100px auto 10px;
+  margin: 10px auto 10px;
   background-color: #fff;
   padding: 0px 5px 5px 7px;
   font-weight: 300;
@@ -724,6 +724,15 @@ p.rightP {
   text-transform: uppercase;
 }
 
+.container.aboutContainer {
+  position: relative;
+  top: 24%;
+}
+
+#about .headerBorder {
+  top: 15%;
+}
+
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* video */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -770,15 +779,18 @@ p.rightP {
 
 section#video {
   color: #fff;
-  margin-top: 25px;
+  margin-top: 100vh;
   position: relative;
   z-index: 10;
-  margin-bottom: 100px;
+  /*margin-bottom: 100px;*/
+  background-color: rgba(41,41,41,1);
+  height: 100vh;
 }
 
 .videoTitle {
   margin-top: 0;
   height: 81px;
+  display: none;
 }
 
 .videoTitleHeader {
@@ -792,7 +804,7 @@ section#video {
   background-color: #fff;
   padding: 0 7px 0 4px;
   font-weight: 300;
-  margin-bottom: 10px;
+  margin: 15px 25px;
 }
 
 .videoDescriptionBlock {
