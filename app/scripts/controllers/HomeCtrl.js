@@ -118,7 +118,7 @@
         });
         
         $(window).scroll(function() {
-          var scrollPos = $('body').scrollTop();
+          var scrollPos = $(window).scrollTop();
           
           if (scrollPos > 0) {
             $('.navbar').addClass('show-color');

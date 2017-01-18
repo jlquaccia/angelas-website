@@ -11,7 +11,10 @@ body {
   border: none;
   background-color: transparent;
   -webkit-transition: all ease-in-out 0.4s;
+  -moz-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
   transition: background-color 0.3s;
   will-change: transform;
 }
@@ -38,6 +41,8 @@ nav.navbar.show-color .navbar-brand.logo {
   -webkit-transform: translate3d(100%, 0, 0);
   -ms-transform: translate(100%, 0);
   -ms-transform: translate3d(100%, 0, 0);
+  -moz-transform: translate(100%, 0);
+  -moz-transform: translate3d(100%, 0, 0);
   transform: translate(100%, 0);
   transform: translate3d(100%, 0, 0);
   opacity: 1;
@@ -49,6 +54,8 @@ nav.navbar.show-other-color .navbar-brand.logo {
   -webkit-transform: translate3d(100%, 0, 0);
   -ms-transform: translate(100%, 0);
   -ms-transform: translate3d(100%, 0, 0);
+  -moz-transform: translate(100%, 0);
+  -moz-transform: translate3d(100%, 0, 0);
   transform: translate(100%, 0);
   transform: translate3d(100%, 0, 0);
   opacity: 1;
@@ -70,6 +77,8 @@ nav.navbar.show-other-color .navbar-brand.logo {
   -webkit-transform: translate3d(100%, -50%, 0);
   -ms-transform: translate(100%, -50%);
   -ms-transform: translate3d(100%, -50%, 0);
+  -moz-transform: translate(100%, -50%);
+  -moz-transform: translate3d(100%, -50%, 0);
   transform: translate(100%, -50%);
   transform: translate3d(100%, -50%, 0);
   transition: transform 0.2s ease-in, opacity 0.2s ease-in, visibility 0.2s ease-in;
@@ -81,6 +90,9 @@ div#bs-example-navbar-collapse-1.navLinks {
   position: absolute;
   top: 50%;
   right: 10%;
+  -webkit-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
 }
 
