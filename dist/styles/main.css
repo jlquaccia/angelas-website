@@ -474,6 +474,11 @@ i.ion-ios-arrow-thin-right {
   top: 0;
   left: 0;
   width: 100%;
+
+  -webkit-transition: height 1000000s ease;
+  -moz-transition: height 1000000s ease;
+  -o-transition: height 1000000s ease;
+  transition: height 1000000s ease;
 }
 
 .skw-page {
@@ -489,16 +494,31 @@ i.ion-ios-arrow-thin-right {
   width: 50%;
   height: 100vh;
   transition: transform 1s;
+
+  -webkit-transition: height 1000000s ease;
+  -moz-transition: height 1000000s ease;
+  -o-transition: height 1000000s ease;
+  transition: height 1000000s ease;
 }
 
 .skw-page__half--left {
   left: 0;
   transform: translate3d(-32.4vh, 100%, 0);
+
+  -webkit-transition: height 1000000s ease;
+  -moz-transition: height 1000000s ease;
+  -o-transition: height 1000000s ease;
+  transition: height 1000000s ease;
 }
 
 .skw-page__half--right {
   left: 50%;
   transform: translate3d(32.4vh, -100%, 0);
+
+  -webkit-transition: height 1000000s ease;
+  -moz-transition: height 1000000s ease;
+  -o-transition: height 1000000s ease;
+  transition: height 1000000s ease;
 }
 
 .skw-page.active .skw-page__half {
@@ -642,6 +662,11 @@ section#about {
   min-height: 100vh;
   display: flex;
   align-items: center;
+
+  -webkit-transition: height 1000000s ease;
+  -moz-transition: height 1000000s ease;
+  -o-transition: height 1000000s ease;
+  transition: height 1000000s ease;
 }
 
 .aboutTitleHeader h1,
@@ -694,6 +719,11 @@ h1.aboutSectionTitle {
 section#video {
   margin-top: 100vh;
   text-align: center;
+
+  -webkit-transition: height 1000000s ease;
+  -moz-transition: height 1000000s ease;
+  -o-transition: height 1000000s ease;
+  transition: height 1000000s ease;
 }
 
 h3.videoSectionTitle,
