@@ -122,14 +122,6 @@
     height: 90%;
     top: 5%;
   }
-
-  .contactBlock {
-    width: 40%;
-  }
-
-  .galleryTitle {
-    text-align: left;
-  }
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -197,10 +189,6 @@
     margin: 0 auto;
   }*/
 
-  .contactBlock ul li .iconWrapper {
-    font-size: 10px;
-  }
-
   #map {
     width: 100%;
   }
@@ -236,10 +224,6 @@
     background-position: -80px 0px;
   }
 
-  .contactBlock {
-    width: 60%;
-  }
-
   #mobileGallery {
     display: block;
   }
@@ -249,6 +233,41 @@
   }
 
   .scrollTop {
+    display: none;
+  }
+
+  .contactBlock ul li i {
+    font-size: 2em;
+  }
+
+  .contactBlock {
+    width: initial;
+    background-color: transparent;
+  }
+
+  .contactBlock ul {
+    background-color: #fff;
+    width: 180px;
+    margin: 0 auto;
+  }
+
+  .contactBlock ul li {
+    display: inline-block;
+    padding: 5px 20px;
+  }
+
+  i.email.ion-android-mail {
+    position: relative;
+    right: 13px;
+  }
+
+  i.instagram.ion-social-instagram-outline {
+    position: relative;
+    left: 10px;
+  }
+
+  .smallEmail,
+  .smallInstagram {
     display: none;
   }
 }

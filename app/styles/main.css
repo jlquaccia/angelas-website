@@ -641,7 +641,8 @@ section#about {
 .aboutTitleHeader h1,
 .cl-effect-6.galleryTitle div,
 .videoSectionTitle,
-.aboutSectionTitle {
+.aboutSectionTitle,
+#contactMobile .videoTitleHeader h3 {
   color: rgba(41,41,41,1);
   font-size: 2.35em;
   background-color: #fff;
@@ -697,7 +698,7 @@ h1.aboutSectionTitle {
 }
 
 h3.videoSectionTitle {
-  margin-top: 50px;
+  margin: 15px;
 }
 
 h3.nameOfVideo {
@@ -797,7 +798,7 @@ h3.email {
 
 
 .contactBlock {
-  width: 20%;
+  width: 288px;
   text-align: center;
   z-index: 10;
   background-color: #fff;
@@ -816,8 +817,9 @@ h3.email {
 
 .contactBlock ul li {
   display: inline-block;
-  padding: 10px 48px;
+  padding: 0 48px;
   border-right: 1px solid rgba(204,204,204,1);
+  margin: 10px 0;
 }
 
 .contactBlock ul li a {
@@ -854,7 +856,11 @@ h3.email {
 }
 
 #contactMobile .videoTitleHeader h3 {
+  display: inline-block;
+}
 
+#contactMobile .videoTitleHeader {
+  text-align: center;
 }
 
 @media all and (min-width: 900px) {
@@ -1016,7 +1022,3 @@ h3.email {
   -webkit-animation: scrollDown 2.5s infinite;
   animation: scrollDown 2.5s infinite;
 }
-
-/*-----------------------------------------------------------------------------------------------------------------------------------*/
-/* parallax effect */
-/*-----------------------------------------------------------------------------------------------------------------------------------*/
