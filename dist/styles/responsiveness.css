@@ -427,6 +427,20 @@
   section#about {
     height: 640px;
   }
+
+  .desktopHeaderBox {
+    display: none;
+  }
+
+  .mobileHeaderBox {
+    display: block;
+  }
+
+  .headerBox h1,
+  .headerBox h2 {
+    animation: none;
+    width: 100%;
+  }
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/

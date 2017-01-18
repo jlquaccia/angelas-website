@@ -449,6 +449,10 @@ i.ion-ios-arrow-thin-right {
   animation-delay: .9s;
 }
 
+.mobileHeaderBox {
+  display: none;
+}
+
 @keyframes fullWidth {
   0% {
     width: 0;
