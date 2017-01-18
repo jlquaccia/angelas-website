@@ -405,18 +405,8 @@
     height: 100%;
   }
 
-  .skw-page__half,
   section#about {
     height: 640px;
-  }
-
-  section#video {
-    margin-top: 640px;
-  }
-
-  .skw-page__content {
-    -webkit-background-size: initial;
-    background-size: initial;
   }
 }
 
