@@ -399,7 +399,8 @@
     width: 80%;
     margin: 0 auto;
   }
-
+  
+  /* vh bugs */
   .skw-pages {
     height: 100%;
   }
@@ -411,6 +412,11 @@
 
   section#video {
     margin-top: 640px;
+  }
+
+  .skw-page__content {
+    -webkit-background-size: initial;
+    background-size: initial;
   }
 }
 
