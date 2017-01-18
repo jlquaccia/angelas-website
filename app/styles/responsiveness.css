@@ -476,4 +476,8 @@
   .aboutTextWrapper p {
     font-size: 8px;
   }
+
+  .block-main {
+    top: 21em;
+  }
 }
