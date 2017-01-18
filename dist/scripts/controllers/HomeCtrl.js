@@ -142,7 +142,7 @@
 
     $scope.goToGallery = function() {
       $('html, body').animate({
-        scrollTop: $('#gallery').offset().top
+        scrollTop: $('#video').offset().top
       }, 600);
     };
 
