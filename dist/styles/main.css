@@ -715,7 +715,7 @@ p.rightP {
 
 .aboutTitleHeader h1,
 .cl-effect-6.galleryTitle div,
-.videoTitleHeader h3 {
+.videoSectionTitle {
   color: rgba(41,41,41,1);
   font-size: 2.35em;
   background-color: #fff;
@@ -736,133 +736,40 @@ p.rightP {
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* video */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
-.videoWrapper {
-  position: relative;
-  padding-bottom: 53%;  /* 16:9 */
-  padding-top: 25px;
-  height: 0;
-}
-
-.videoWrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 80%;
-  height: 470px;
-  right: 0;
-  margin: 0 auto;
-}
-
-.p0 {
-  padding: 0;
-}
-
-.videoBlurb {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.videoDescription {
-  display: inline;
-}
-
-.m0 {
-  margin: 0;
-}
-
-.col-md-4.p0.text-center.videoDescriptionWrapper {
-  height: 534px;
-  padding-left: 20px;
-  background-color: #4D4946;
-}
-
 section#video {
-  color: #fff;
   margin-top: 100vh;
-  position: relative;
-  z-index: 10;
-  /*margin-bottom: 100px;*/
-  background-color: rgba(41,41,41,1);
-  height: 100vh;
-}
-
-.videoTitle {
-  margin-top: 0;
-  height: 81px;
-  display: none;
-}
-
-.videoTitleHeader {
   text-align: center;
 }
 
-.videoTitleHeader h3 {
+h3.videoSectionTitle,
+h3.nameOfVideo {
   display: inline-block;
-  color: rgba(41,41,41,1);
-  font-size: 2.35em;
+}
+
+h3.videoSectionTitle {
+  margin-top: 50px;
+}
+
+h3.nameOfVideo {
   background-color: #fff;
-  padding: 0 7px 0 4px;
   font-weight: 300;
-  margin: 15px 25px;
-}
-
-.videoDescriptionBlock {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(130,17,34,1);
-  position: absolute;
-  right: 60%;
-  z-index: -1;
-  bottom: -9%;
-  left: 3%;
-}
-
-.videoDescriptionBlockWrapper {
-  height: 474px;
-}
-
-.videoDescriptionBlockSmall {
-  color: rgba(41,41,41,1);
-  width: 50%;
-  background-color: #fff;
-  position: absolute;
-  bottom: -31%;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
-}
-
-.videoDescriptionBlockSmall p {
-  padding: 10px;
-}
-
-.currentVideo {
-  background-color: #fff;
-  color: rgba(41,41,41,1);
-  position: absolute;
-  bottom: -45px;
-  padding: 0 7px 0 4px;
-  z-index: -1;
-  width: 233px;
-  text-align: center;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
   padding: 5px;
-  display: inline-block;
-  width: 233px;
+  font-size: 18px;
 }
 
-.currentVideo h3 {
-  font-weight: 100;
-  font-size: 15px;
-  padding: 0;
-  display: inline;
+.responsive-video {
+  width: 100%;
+  height: 56.2vw;
+  max-width: 1000px;
+  max-height: 572px;
 }
 
-.videoStuffWrapper .videoDescriptionBlock {
-  display: none;
+p.videoDescription {
+  background-color: #fff;
+  width: 50%;
+  margin: 0 auto 50px;
+  text-align: left;
+  padding: 5px;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
