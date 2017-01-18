@@ -467,10 +467,6 @@ header.homeHeader.ng-scope {
 
 /* skewed background */
 .skw-pages {
-  /*overflow: hidden;
-  position: relative;
-  height: 100vh;*/
-
   overflow: hidden;
   position: fixed;
   height: 100vh;
