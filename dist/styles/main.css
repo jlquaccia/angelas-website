@@ -639,11 +639,13 @@ div#gallery {
 /* about */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 section#about {
-  height: 100vh;
   background-color: rgba(130,17,34,1);
   color: rgba(32,32,32,1);
   position: relative;
-  /*margin-top: 100px;*/
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .aboutTitleHeader {
@@ -715,7 +717,8 @@ p.rightP {
 
 .aboutTitleHeader h1,
 .cl-effect-6.galleryTitle div,
-.videoSectionTitle {
+.videoSectionTitle,
+.aboutSectionTitle {
   color: rgba(41,41,41,1);
   font-size: 2.35em;
   background-color: #fff;
@@ -733,6 +736,29 @@ p.rightP {
   top: 15%;
 }
 
+.aboutSectionTitleWrapper {
+  text-align: center;
+}
+
+.aboutTextWrapper p {
+  background-color: #fff;
+  padding: 5px;
+}
+
+p.pLeft {
+  position: relative;
+  left: -1%;
+}
+
+p.pRight {
+  position: relative;
+  right: -1%;
+}
+
+h1.aboutSectionTitle {
+  margin-top: 0;
+}
+
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* video */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -742,7 +768,8 @@ section#video {
 }
 
 h3.videoSectionTitle,
-h3.nameOfVideo {
+h3.nameOfVideo,
+h1.aboutSectionTitle {
   display: inline-block;
 }
 
