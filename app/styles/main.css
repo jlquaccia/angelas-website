@@ -472,7 +472,7 @@ header.homeHeader.ng-scope {
   height: 100vh;*/
 
   overflow: hidden;
-  /*position: fixed;*/
+  position: fixed;
   height: 100vh;
   z-index: -1;
   top: 0;
