@@ -13,7 +13,7 @@ body {
   position: relative;
   min-height: 100%;
   padding-bottom: 0 !important;
-  background-color: rgba(41,41,41,1);
+  background-color: #FFFFFF;
 }
 
 html {
@@ -595,7 +595,7 @@ div#gallery {
   margin-top: 0;
   position: relative;
   z-index: 9;
-  background-color: rgba(41,41,41,1);
+  background-color: #FFFFFF;
 }
 
 .galleryTitle {
@@ -669,11 +669,11 @@ section#about {
 }
 
 .aboutTextWrapper p {
-  background-color: #fff;
   padding: 5px;
+  color: #ffffff;
 }
 
-p.pLeft {
+/*p.pLeft {
   position: relative;
   left: -1%;
 }
@@ -681,10 +681,12 @@ p.pLeft {
 p.pRight {
   position: relative;
   right: -1%;
-}
+}*/
 
 h1.aboutSectionTitle {
   margin-top: 0;
+  color: #ffffff;
+  background-color: transparent;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
