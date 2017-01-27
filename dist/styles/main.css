@@ -751,9 +751,9 @@ p.videoDescription {
 }
 
 .videoTitleHeader .stayInTouch {
-  background-color: #fff;
+  background-color: transparent;
   display: inline-block;
-  color: rgba(41,41,41,1);
+  color: #FFFFFF;
   margin-top: 0;
   padding: 0 7px 0 4px;
   font-weight: 300;
@@ -863,6 +863,8 @@ h3.email {
 
 #contactMobile .videoTitleHeader h3 {
   display: inline-block;
+  background-color: transparent;
+  color: #FFFFFF;
 }
 
 #contactMobile .videoTitleHeader {

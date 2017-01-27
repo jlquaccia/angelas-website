@@ -21,6 +21,7 @@ body {
 
 nav.navbar.show-color {
   background: #fff;
+  box-shadow: 1px 0px 2px #292929;
 }
 
 nav.navbar.show-other-color {
